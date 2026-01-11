@@ -8,46 +8,46 @@ namespace CarExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("=== Autotesti - Tehtävä ===\n");
+            Console.WriteLine("Car \n");
 
             Car car1 = new Car();
             Car car2 = new Car();
 
-            Console.WriteLine("Ensimmäinen auto:");
+            Console.WriteLine("First car:");
             car1.AskData();
             Console.WriteLine();
 
-            Console.WriteLine("Toinen auto:");
+            Console.WriteLine("Second car:");
             car2.AskData();
             Console.WriteLine();
 
-            Console.WriteLine("\nAlkutilanne:");
+            Console.WriteLine("\nStart:");
             car1.ShowCarInfo();
             car2.ShowCarInfo();
             Console.WriteLine();
 
-            Console.WriteLine("Kiihdytetään autoja...");
+            Console.WriteLine("Accelerating the cars.");
             car1.Accelerate(30.5);
             car2.Accelerate(45.0);
             car1.Accelerate(15.0);
             Console.WriteLine();
 
-            Console.WriteLine("Kiihdytyksen jälkeen:");
+            Console.WriteLine("After acceleration:");
             car1.ShowCarInfo();
             car2.ShowCarInfo();
             Console.WriteLine();
 
-            Console.WriteLine("Jarrutetaan...");
+            Console.WriteLine("Braking");
             car1.Brake();
             car2.Brake();
             car2.Brake();
             Console.WriteLine();
 
-            Console.WriteLine("Lopputilanne:");
+            Console.WriteLine("Finish:");
             car1.ShowCarInfo();
             car2.ShowCarInfo();
 
-            Console.WriteLine("\nPaina mitä tahansa näppäintä lopettaaksesi...");
+            Console.WriteLine("\nPress any key to exit.");
             Console.ReadKey();
         }
     }

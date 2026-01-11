@@ -8,44 +8,44 @@ namespace CarExercise
         private double speed;
         public Car()
         {
-            brand = "Tuntematon";
+            brand = "Unknown";
             speed = 0.0;
         }
 
         public void AskData()
         {
-            Console.Write("Anna auton merkki: ");
+            Console.Write("Type in a car brand: ");
             brand = Console.ReadLine();
 
-            Console.Write("Anna auton nopeus (km/h): ");
+            Console.Write("Give a speed for the car (km/h): ");
             string input = Console.ReadLine();
 
             if (!double.TryParse(input, out speed))
             {
-                Console.WriteLine("Virheellinen syöte! Nopeus asetetaan arvoksi 0.");
+                Console.WriteLine("Unknown input! Speed set to 0.");
                 speed = 0.0;
             }
         }
         public void ShowCarInfo()
         {
-            Console.WriteLine($"Auto: {brand}, Nopeus: {speed:F1} km/h");
+            Console.WriteLine($"Car: {brand}, Speed: {speed:F1} km/h");
         }
         public void Accelerate(double change)
         {
             if (change < 0)
             {
-                Console.WriteLine("Virhe: Negatiivinen kiihdytys ei ole sallittu!");
+                Console.WriteLine("Error: Negative acceleration is not allowed!");
                 return;
             }
 
             speed += change;
-            Console.WriteLine($"Kiihdytettiin {change:F1} km/h → uusi nopeus: {speed:F1} km/h");
+            Console.WriteLine($"Accelerated {change:F1} km/h, new speed: {speed:F1} km/h");
         }
         public void Brake()
         {
             if (speed <= 0)
             {
-                Console.WriteLine("Auto on jo pysähdyksissä.");
+                Console.WriteLine("The car has already stopped.");
                 return;
             }
 
@@ -54,8 +54,8 @@ namespace CarExercise
 
             if (speed < 0) speed = 0;
 
-            Console.WriteLine($"Jarrutettiin → nopeus väheni {reduction:F1} km/h");
-            Console.WriteLine($"Uusi nopeus: {speed:F1} km/h");
+            Console.WriteLine($"Braked, speed decreased by {reduction:F1} km/h");
+            Console.WriteLine($"New speed: {speed:F1} km/h");
         }
     }
 }
