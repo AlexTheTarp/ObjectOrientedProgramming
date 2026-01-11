@@ -32,7 +32,7 @@
         {
             return $"Title: {title}, Author: {author}, ID: {id}, Price: {price:C}";
         }
-        
+        // 123
         public string ComparePrice(Book otherBook)
         {
             if (this.price > otherBook.price)
