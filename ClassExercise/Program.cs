@@ -1,4 +1,5 @@
 ﻿using CompanyExercise;
+using System;
 
 namespace ClassExercise
 {
@@ -38,8 +39,8 @@ namespace ClassExercise
             Console.WriteLine(companyCopy.GetFinancialStatus());
             Console.WriteLine();
 
-            Console.WriteLine("Changing income of the copy does not affect the original:");
-            companyCopy.income = 500000.0;
+            Console.WriteLine("Changing outcome of the copy does not affect the original:");
+            companyCopy.outcome = 500000.0;
             Console.WriteLine("Original after copy change:");
             Console.WriteLine(company1.GetFinancialStatus());
             Console.WriteLine();

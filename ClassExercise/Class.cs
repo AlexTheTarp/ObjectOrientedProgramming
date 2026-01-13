@@ -5,16 +5,16 @@
         private string title;
         private string address;
         private string phone;
-        private double income;
-        private double expence;
+        private double outcome;
+        private double expense;
 
         public Company()
         {
             title = "Unknown Company";
             address = "Unknown Adress";
             phone = "N/A";
-            income = 0.0;
-            expence = 0.0;
+            outcome = 0.0;
+            expense = 0.0;
         }
 
         public Company(string title, string address, string phone, double outcome, double expense)
@@ -22,8 +22,8 @@
             this.title = title;
             this.address = address;
             this.phone = phone;
-            this.income = income;
-            this.expence = expence;
+            this.outcome = outcome;
+            this.expense = expense;
         }
 
         public Company(Company other)
@@ -36,18 +36,18 @@
             this.title = other.title;
             this.address = other.address;
             this.phone = other.phone;
-            this.income = other.income;
-            this.expence = other.expence;
+            this.outcome = other.outcome;
+            this.expense = other.expense;
         }
 
         public string GetFinancialStatus()
         {
-            if (income <= 0)
+            if (outcome <= 0)
             {
-                return $"{title}: No income recorded → cannot calculate profit percentage.";
+                return $"{title}: No outcome recorded → cannot calculate profit percentage.";
             }
 
-            double profitPercentage = ((income - expence) / income) * 100;
+            double profitPercentage = ((outcome - expense) / outcome) * 100;
 
             string evaluation;
 
@@ -69,7 +69,7 @@
             }
 
             return $"{title} (Address: {address}, Phone: {phone})\n" +
-               $"Income: {income:C}, Expenses: {expence:C}\n" +
+               $"outcome: {outcome:C}, Expenses: {expense:C}\n" +
                $"Profit percentage: {profitPercentage:F2}%\n" +
                $"Evaluation: {evaluation}";
         }
