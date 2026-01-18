@@ -5,7 +5,7 @@
         private string title;
         private string address;
         private string phone;
-        private double outcome;
+        public double outcome;
         private double expense;
 
         public Company()
