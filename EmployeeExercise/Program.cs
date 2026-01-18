@@ -20,10 +20,6 @@ class Program
         {
             emp.PrintEmployeeInfo();
         }
-        foreach (Employee emp in employees)
-        {
-            Console.WriteLine(emp.ToString());
-        }
         Console.WriteLine();
 
         for (int i = 0; i < employees.Length; i++)

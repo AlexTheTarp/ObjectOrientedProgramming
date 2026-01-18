@@ -30,11 +30,11 @@
 
             if (this.salary > other.salary)
             {
-                return $"{this.name} {this.position} earns more than {other.name} {other.position}: {this.salary:C} vs {other.salary:C}";
+                return $"{this.name}, {this.position} earns more than {other.name}, {other.position}: {this.salary:C} vs {other.salary:C}";
             }
             else if (this.salary < other.salary)
             {
-                return $"{other.name} {other.position} earns more than {this.name} {this.position}: {other.salary:C} vs {this.salary:C}";
+                return $"{other.name}, {other.position} earns more than {this.name}, {this.position}: {other.salary:C} vs {this.salary:C}";
             }
             else
             {
@@ -48,10 +48,6 @@
             Console.WriteLine($"Position: {position}");
             Console.WriteLine($"Salary: {salary:C}");
             Console.WriteLine();
-        }
-        public override string ToString()
-        {
-            return $"Employee: {name} | ID: {id} | Position: {position} | Salary: {salary:C}";
         }
     }
 }
