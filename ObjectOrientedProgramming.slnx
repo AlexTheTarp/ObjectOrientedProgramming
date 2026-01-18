@@ -2,4 +2,5 @@
   <Project Path="BookExercise/BookExercise.csproj" />
   <Project Path="CarExercise/CarExercise.csproj" />
   <Project Path="ClassExercise/ClassExercise.csproj" Id="cd4d4595-ea30-4f9c-a5a4-8f39aa912845" />
+  <Project Path="EmployeeExercise/EmployeeExercise.csproj" Id="b8c38adb-7f77-4785-830f-feeee1c0b1ac" />
 </Solution>
