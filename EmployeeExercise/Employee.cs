@@ -49,5 +49,12 @@
             Console.WriteLine($"Salary: {salary:C}");
             Console.WriteLine();
         }
+        public override string ToString()
+        {
+            return $"Employee: {name}\n" +
+                   $"ID: {id}\n" +
+                   $"Position: {position}\n" +
+                   $"Salary: {salary:C}";
+        }
     }
 }
