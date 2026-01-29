@@ -11,7 +11,7 @@ class Program
 
         vehicle1.PrintInformation();
         car1.PrintInformation();
-
+        
         Console.WriteLine("ToString and Equals");
         Car car2 = new Car("Honda", "Civic", 2019, 21000.0, "1.8L", "Sedan", 4);
         Car car3 = new Car("Ford", "Focus", 2021, 22000.0, "2.0L", "Hatchback", 5);
