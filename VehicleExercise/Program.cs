@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
         Console.WriteLine("Basic");
         Vehicle vehicle1 = new Car("Toyota", "Camry", 2020, 25000.0, "2.5L", "Sedan", 4);
         Car car1 = new Car("Honda", "Civic", 2019, 20000.0, "1.8L", "Hatchback", 5);
@@ -32,7 +33,7 @@ class Program
 
         Car carFromTruck = truck1;
         Console.WriteLine("Truck1 as Car:");
-        carFromTruck.PrintInformation();
+        Console.WriteLine(carFromTruck.ToString());
 
         Truck truckFromCar = carFromTruck as Truck;
         if (truckFromCar != null)
