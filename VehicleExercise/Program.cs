@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.OutputEncoding = System.Text.Encoding.UTF8;
+        Console.OutputEncoding = System.Text.Encoding.UTF8; //Tämä on tässä koska muuten euro mekrkit näkyvät kysymys merkkeinä.
 
         Console.WriteLine("Basic");
         Vehicle vehicle1 = new Car("Toyota", "Camry", 2020, 25000.0, "2.5L", "Sedan", 4);
