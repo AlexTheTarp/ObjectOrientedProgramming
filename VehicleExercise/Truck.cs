@@ -18,17 +18,17 @@ public class Truck : Car
         this.consumption = consumption;
     }
 
-    public double CaculateConsumption(double distance)
+    public double CalculateConsumption(double distance)
     {
         return (consumption / 100) * distance;
     }
-
+    
     public override void PrintInformation()
     {
         base.PrintInformation();
         Console.WriteLine($"Load: {load} kg");
         Console.WriteLine($"Consumption: {consumption} L/100 km");
-        Console.WriteLine($"Total for 100 km: {CaculateConsumption(100):F2} L");
+        Console.WriteLine($"Total for 100 km: {CalculateConsumption(100):F2} L");
         Console.WriteLine();
     }
 }

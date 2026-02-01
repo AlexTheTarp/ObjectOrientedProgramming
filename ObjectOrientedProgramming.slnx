@@ -4,5 +4,6 @@
   <Project Path="CarExercise/CarExercise.csproj" />
   <Project Path="ClassExercise/ClassExercise.csproj" Id="cd4d4595-ea30-4f9c-a5a4-8f39aa912845" />
   <Project Path="EmployeeExercise/EmployeeExercise.csproj" Id="b8c38adb-7f77-4785-830f-feeee1c0b1ac" />
+  <Project Path="InterfaceExersice/InterfaceExersice.csproj" Id="da65a926-cf7e-4f22-8276-bad9973db5d8" />
   <Project Path="VehicleExercise/VehicleExercise.csproj" Id="1fbbecca-5198-4180-b8bd-5e0003b487c4" />
 </Solution>
