@@ -4,14 +4,19 @@ using static Customer;
 public class Store : IProducts, ICustomers
 {
     private string name;
-    private double revenue;
     private List<Product> products = new List<Product>();
     private List<Customer> customers = new List<Customer>();
 
-    public Store(string name, double revenue)
+    public Store(string name)
     {
         this.name = name;
-        this.revenue = revenue;
+    }
+
+    public double Revenue => products.Sum(p => p.CalculateTotal());
+
+    public override string ToString()
+    {
+        return $"Store: {name}, Revenue: {Revenue:C}, Customers: {customers.Count}, Products: {products.Count}";
     }
 
     public void AddProduct(Product product)
@@ -45,10 +50,5 @@ public class Store : IProducts, ICustomers
         }
         Console.WriteLine($"Total customer bonuses: {totalBonus:C}");
         Console.WriteLine();
-    }
-
-    public override string ToString()
-    {
-        return $"Store: {name}, Revenue: {revenue:C}, Customers: {customers.Count}, Products: {products.Count}";
     }
 }

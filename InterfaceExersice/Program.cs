@@ -38,7 +38,7 @@ class Program
         }
         Console.WriteLine();
 
-       var store = new Store("TechStore Oy", 250000);
+        var store = new Store("TechStore Oy");
 
         foreach (var p in products) store.AddProduct(p);
         foreach (var c in customers) store.AddCustomer(c);
