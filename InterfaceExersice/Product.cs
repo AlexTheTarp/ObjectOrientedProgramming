@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace InterfaceExersice
 {
     public interface IProduct
     {
         bool MatchesName(string value);
-        double CaculateTotal();
+        double CalculateTotal();
     }
 
     public class Product : IProduct
@@ -27,14 +26,14 @@ namespace InterfaceExersice
             return name.Equals(value, StringComparison.OrdinalIgnoreCase);
         }
 
-        public double CaculateTotal()
+        public double CalculateTotal()
         {
             return price * count;
         }
 
         public override string ToString()
         {
-            return $"Product: {name}, Price: {price:C}, Count: {count}, Total: {CaculateTotal():C}";
+            return $"Product: {name}, Price: {price:C}, Count: {count}, Total: {CalculateTotal():C}";
         }
     }
 
@@ -44,3 +43,4 @@ namespace InterfaceExersice
         void PrintProducts();
     }
 }
+
