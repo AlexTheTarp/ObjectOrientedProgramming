@@ -12,7 +12,10 @@ public class Store : IProducts, ICustomers
         this.name = name;
     }
 
-    public double Revenue => products.Sum(p => p.CalculateTotal());
+    public double Revenue
+    {
+        get { return products.Sum(p => p.CalculateTotal()); }
+    }
 
     public override string ToString()
     {
