@@ -37,16 +37,13 @@ public class Library
 
     public void ListBooks()
     {
-        if (books.Count == 0)
+        Console.WriteLine($"{"Title",-50} {"Author",-30} {"Status",-12}");
+        Console.WriteLine(new string('-', 50 + 30 + 12 + 4)); 
+
+        foreach (var book in books)
         {
-            Console.WriteLine("No books in the library.");
-        }
-        else
-        {
-            foreach (var book in books)
-            {
-                Console.WriteLine(book.ToString());
-            }
+            string status = book.IsBorrowed ? "Borrowed" : "Available";
+            Console.WriteLine($"{book.Title,-50} {book.Author,-30} {status,-12}");
         }
     }
 }
