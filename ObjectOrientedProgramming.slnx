@@ -6,6 +6,7 @@
   <Project Path="EmployeeExercise/EmployeeExercise.csproj" Id="b8c38adb-7f77-4785-830f-feeee1c0b1ac" />
   <Project Path="InsuranceExersice/InsuranceExersice.csproj" Id="945ea9bc-68d2-4023-8bed-2d272ef51bb3" />
   <Project Path="InterfaceExersice/InterfaceExersice.csproj" Id="da65a926-cf7e-4f22-8276-bad9973db5d8" />
+  <Project Path="LibaryExersice/LibraryExersice.csproj" Id="b8881497-ccd5-495b-82b3-82e07f257d15" />
   <Project Path="ShapesExercise/ShapesExercise.csproj" Id="9666464b-a84e-48cf-a618-82ca9b969a44" />
   <Project Path="VehicleExercise/VehicleExercise.csproj" Id="1fbbecca-5198-4180-b8bd-5e0003b487c4" />
 </Solution>
