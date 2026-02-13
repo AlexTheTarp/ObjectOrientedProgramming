@@ -17,7 +17,7 @@ public class InsuranceManager
 
         if (animal == "koira")
         {
-            return isNeutered? 50 : 80;
+            return isNeutered ? 50 : 80;
         }
         else if (animal == "kissa")
         {
